@@ -4,5 +4,27 @@
   "affected": {
     "defaultBase": "master"
   },
-  "nxCloudAccessToken": "MTliZTAyMjEtZDE0MC00YTQxLWEwMWQtY2QzOGRlMjNjMDg2fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MTliZTAyMjEtZDE0MC00YTQxLWEwMWQtY2QzOGRlMjNjMDg2fHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "plugin": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ]
 }
